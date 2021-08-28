@@ -1,0 +1,300 @@
+0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22)
+
+
+content
+
+.menu_content_one {
+    margin-top: 40px;
+}
+
+.lightbox_img_content {
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    border-right: 1px dashed grey;
+    padding-right: 15px;
+}
+
+.images img {
+    width: 350px;
+    height: 250px;
+}
+
+.images h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.images span:first-of-type {
+    color: var(--Bxcolor);
+    margin-right: 2px;
+}
+
+.images span:last-of-type{
+    color: var(--dark-color);
+}
+
+.images_two_light {
+    display: flex;
+    align-items:center;
+}
+
+.images_two_light img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.buttons {
+    margin-left: 50px;
+    width: 490px;
+    background-color: #f4f4f4;
+}
+
+.cloaun {
+    padding: 15px;
+}
+
+.cloaun a:nth-child(1){
+    background: rgb(26,146,255);
+    background: linear-gradient(176deg, rgba(26,146,255,1) 35%, rgba(15,94,226,1) 60%);;
+    font-size: 32px;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: var(--text_style);
+}
+
+.cloaun a:nth-child(2){
+    background: rgb(26,146,255);
+    background: linear-gradient(176deg, rgba(26,146,255,1) 35%, rgba(15,94,226,1) 60%);;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 32px;
+    color: #fff;
+    font-family: var(--text_style);
+}
+
+.cloaun a:hover{
+    opacity: 0.7;
+}
+
+/* mainni ikknchi qismi */
+
+.main_content_two {
+    background-color: darkblue;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px #333;
+}
+
+.main_content_icons {
+    display: flex;
+    align-items:center;
+    margin-left: -120px;
+}
+
+.main_content_icons a:nth-child(1) {
+    color: #fff;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.dlez {
+    display: flex;
+    align-items: center;
+}
+
+.main_dd {
+    display: flex;
+    align-items:center;
+    margin-left: 30px;
+}
+
+.main_dd .dd {
+    position: relative;
+    display: inline-block;
+ }
+.main_dd .dd-btn {
+    padding: 15px;
+    text-align: center;
+    background: #173459;
+    border: none;
+    width: 300px;
+    color: #f8f9f9;
+    font-size: 17px;
+ }
+.main_dd .dd-content {
+    position: absolute;
+    width: 300px;
+    background-color: #fff;
+    /* box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22); */
+    height: 0px;
+    transition: height 1s;
+    overflow: hidden;
+ }
+.main_dd .dd:hover > .dd-content {
+    height: 250px;
+ }
+.main_dd .dd-content > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #111;
+    font-family: var(--playfire);
+ }
+
+ .main_dd .dd-content > a:hover {
+     background-color: darkblue;
+     color: #fff;
+ }
+
+/* main contentn uchnchsi */
+
+.main_content_there {
+    padding: 30px;
+    background: rgb(26,146,255);
+    background: linear-gradient(176deg, rgba(26,146,255,1) 35%, rgba(15,94,226,1) 60%);
+}
+
+.main_content_background {
+    display: flex;
+    align-items:center;
+}
+
+.main_content_background img {
+    margin-right: 30px;
+}
+
+.main_content_background h1 {
+    border-bottom: 2px dashed #111;
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: var(--text_style);
+    letter-spacing: 1px;
+}
+
+.main_content_background p {
+    padding-top: 15px;
+    line-height: 150%;
+    color: #ddd;
+    font-family: var(--playfire);
+}
+
+
+html 
+
+    <!-- <header>
+        <div class="menu_content_one">
+            <div class="container">
+                <div class="lightbox_img_content">
+                    <div class="images">
+                        <img src="images/XLOGO.svg" alt="">
+                        <h1><span>X</span><span>V</span>est.ru</h1>
+                    </div>
+                    <div class="images_two_light">
+                        <img src="images/medal_16_years.png" alt="">
+                        <div class="buttons">
+                            <div class="cloaun">
+                                <a href="#">Вход</a>
+                                <a href="contact/contact.html">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+        <!-- <div class="main_content_two">
+            <div class="container">
+                <div class="dlez">
+                    <div class="main_content_icons dlez">
+                        <a href=""><i class="fas fa-home"></i></a> 
+                      </div>
+                      <div class="main_dd">
+                          <div class="dd">
+                              <button class="dd-btn">ХОСТИНГ И СЕРВЕРЫ</button>
+                              <div class="dd-content">
+                                 <a href="#">Виртуальный хостинг</a>
+                                 <a href="#">Выделенные серверы</a>
+                                 <a href="#">Удаленный бэкап</a>
+                                 <a href="">Защита от DDoS-атак</a>
+                                 <a href="">Администрирование</a>
+                              </div>
+                           </div>
+                      </div>
+                      <div class="main_dd">
+                        <div class="dd">
+                            <button class="dd-btn">СОЗДАНИЕ САЙТА</button>
+                            <div class="dd-content">
+                               <a href="#">Конструктор сайтов</a>
+                               <a href="#">Лицензии CMS</a>
+                               <a href="#">Шаблоны сайтов</a>
+                               <a href="">Сайт под ключ</a>
+                               <a href="">Защита от DDoS-атак</a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="main_dd">
+                        <div class="dd">
+                            <button class="dd-btn">О КОМПАНИИ</button>
+                            <div class="dd-content">
+                               <a href="#">О нас</a>
+                               <a href="#">Контакты</a>
+                               <a href="#">Дата-центры</a>
+                               <a href="">Акции</a>
+                               <a href="">Документы</a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="main_dd">
+                        <div class="dd">
+                            <button class="dd-btn">ПОДДЕРЖКА</button>
+                            <div class="dd-content">
+                               <a href="#">О нас</a>
+                               <a href="#">Контакты</a>
+                               <a href="#">Дата-центры</a>
+                               <a href="">Акции</a>
+                               <a href="">Документы</a>
+                            </div>
+                         </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="main_content_there">
+            <div class="container">
+                <div class="main_content_background">
+                    <img src="images/page_19.png" alt="">
+                    <div class="main_content_text">
+                        <h1>ПАРТНЕРСКАЯ ПРОГРАММА</h1>
+                        <p>Уже более 15 лет наша компания успешно продает качественный хостинг на рынках СНГ и Европы. Мы предлагаем всем желающим зарабатывать вместе с нами. Вы можете предлагать наши услуги своим друзьям и знакомым, коллегам и своим партнерам, руководителю и шефу. Ваши клиенты будут получать удовольствие от работы с нашими услугами, Вы никогда не пожалеете о своем шаге, а мы станем своевременно выплачивать Ваш процент заработка с каждого, приведенного Вами, заказа. Наши ставки одни из самых высоких на рынке. Стаж и опыт не дают усомниться в наших добрых!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+             <div class="logo_img">
+                    <img src="/images/XLOGO.svg" alt="">
+                </div>
+                <div class="logo">
+                    <a href="#">О нас</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Дата-центры</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Способы оплаты</a>
+                    <a href="#">Корпоративный блог</a>
+                    <a href="">Документы</a>
+                </div>
+                <div class="icons">
+                    <a href="dashboard/index.html"><i class="far fa-user"></i></a>
+                </div>
