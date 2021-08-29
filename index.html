@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xvest.Ru</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/slick.min.js"></script>
 </head>
-<body>
+<body class="animation">
     <nav>
         <div class="container">
             <div class="navgiton">
@@ -28,7 +31,7 @@
                 <div class="icons">
                     <a href=""><i class="fas fa-user-plus"></i><span>Registr</span></a>
                     <a href=""><i class="fas fa-key"></i><span>Выход</span></a>
-                    <a href="dashboard/index.html"><i class="fas fa-user"></i><span>dashboard</span></a>
+                    <a href="Dashboard/index.html"><i class="fas fa-user"></i><span>dashboard</span></a>
                 </div>
             </div>
         </div>
@@ -49,45 +52,78 @@
         </div>
         <div class="carusel">
             <div class="container1">
-
-                <!-- mawtka carusel -->
-
-                <!-- <div class="slidershow middle">
-
-                    <div class="slides">
-                      <input type="radio" name="r" id="r1" checked>
-                      <input type="radio" name="r" id="r2">
-                      <input type="radio" name="r" id="r3">
-                      <input type="radio" name="r" id="r4">
-                      <input type="radio" name="r" id="r5">
-                      <div class="slide s1">
-                        <img src="1.jpg" alt="">
-                      </div>
-                      <div class="slide">
-                        <img src="2.jpg" alt="">
-                      </div>
-                      <div class="slide">
-                        <img src="3.jpg" alt="">
-                      </div>
-                      <div class="slide">
-                        <img src="4.jpg" alt="">
-                      </div>
-                      <div class="slide">
-                        <img src="5.jpg" alt="">
-                      </div>
-                    </div>
-              
-                    <div class="navigation">
-                      <label for="r1" class="bar"></label>
-                      <label for="r2" class="bar"></label>
-                      <label for="r3" class="bar"></label>
-                      <label for="r4" class="bar"></label>
-                      <label for="r5" class="bar"></label>
-                    </div>
-                  </div> -->
+                <div class="slider">
+                    <img src="images/choose-us-1.png" alt="">
+                    <img src="images/choose-us-2.png" alt="">
+                    <img src="images/choose-us-3.png" alt="">
+                </div>
             </div>
         </div>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <section>
+        <div class="cards_section_grid">
+            <div class="container1">
+                <div class="card_grid">
+                    <div class="card">
+
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section> -->
+    <section>
+        <div class="content_serache">
+            <div class="container1">
+                <div class="serach_content_plus">
+                    <div class="text"><h1>A great domain means instant credibility!</h1></div>
+                    <div class="text2">
+                        <h4>Register your perfect domain name for just $12/yr</h4>
+                    </div>
+                    <div class="content_input">
+                        <form action="">
+                            <input type="text" placeholder="search for your domain">
+                            <i class="fas fa-search"></i>
+                        </form>
+                    </div>
+                    <div class="content-vbr">
+                        <div class="cards-vbr">
+                            <div class="carda">
+                                <span>.com</span>
+                                <span>$12/yr</span>
+                            </div>
+                            <div class="carda">
+                                <span>.net</span>
+                                <span>$13/yr</span>
+                            </div>
+                            <div class="carda">
+                                <span>.org</span>
+                                <span>$12/yr</span>
+                            </div>
+                            <div class="carda">
+                                <span>.biz</span>
+                                <span>$18/yr</span>
+                            </div>   <div class="carda">
+                                <span>.live</span>
+                                <span>$12/yr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_vbr_img">
+            <img src="images/tldsphoto_2021-08-29_11-56-42.jpg" alt="">
+        </div>
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script>
+        $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        autoplay: true,
+        speed: 350,
+        });
+    </script>
 </body>
 </html>
